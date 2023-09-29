@@ -11,11 +11,11 @@ def isPrime(number):
             return True
 
 def primes(number_of_primes):
-    list = []
-    
+       
     if number_of_primes<1:
     	raise ValueError("The number can't be lower than 1")
     
+    list = []
 
     i=0
     while len(list) < number_of_primes:
@@ -25,7 +25,5 @@ def primes(number_of_primes):
         
 
     return list
-      
-
-        
+          
 print(primes(-1))
