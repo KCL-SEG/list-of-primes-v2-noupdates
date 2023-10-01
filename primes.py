@@ -11,19 +11,16 @@ def isPrime(number):
             return True
 
 def primes(number_of_primes):
-       
-    if number_of_primes<1:
-    	raise ValueError("The number can't be lower than 1")
-    
     list = []
 
+    if number_of_primes<1:
+        raise ValueError("The number can't be lower than 1")
+    
     i=0
     while len(list) < number_of_primes:
         if isPrime(i):
             list.append(i)
         i += 1
         
-
     return list
           
-print(primes(-1))
